@@ -5,6 +5,7 @@ const AuthPage = (props) => {
     e.preventDefault();
     const { value } = e.target[0];
     axios
+    // This is the URL of the backend server
       .post("https://live-chat-wwd9.onrender.com/signup", {
         username: value,
         secret: value,
