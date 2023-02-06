@@ -5,7 +5,7 @@ const AuthPage = (props) => {
     e.preventDefault();
     const { value } = e.target[0];
     axios
-      .post("http://localhost:3001/signup", {
+      .post("https://live-chat-wwd9.onrender.com/signup", {
         username: value,
         secret: value,
       })
